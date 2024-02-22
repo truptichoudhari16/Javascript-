@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event (Apana College)</title>
+  </head>
+
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: dodgerblue;
+      color: white;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <h2 style="display: flex; align-items: center; justify-content: center">
+      This is inline event handling
+    </h2>
+    <!-- This is inline event handling 
+        beacuse we are handling event inside html tags
+         (Drwback -> HTML code becomes so bulky ) -->
+
+    <!-- onclick Event   -->
+    <button onclick="console.log('button was clicked');alert('hello!')">
+      Click me
+    </button>
+
+    <br /><br />
+    <!-- Double CLick Event  -->
+    <button ondblclick="console.log('button was clicked 2x');">
+      Click me 2 times
+    </button>
+
+    <br /><br />
+
+    <!-- mouse hover Event -->
+    <div onmouseover="console.log('you are inside div')">This is a box</div>
+
+    <br /><br />
+
+    <!-- External Event handling  
+        ->(Drawback) here we can handle our events by writing only one function at a time -->
+
+    <h2 style="display: flex; align-items: center; justify-content: center">
+      This is External event handling
+    </h2>
+
+    <!-- onclick  -->
+    <button id="btn1">hey! click me</button>
+
+    <br /><br />
+
+    <!-- onmouseover event  -->
+    <div id="div2">This is a second box</div>
+
+    <br /><br />
+    <!-- AddEventListener  -->
+
+    <button id="btn2">Hii! I am a Event listner button</button>
+  </body>
+  <script src="Two.js"></script>
+</html>
